@@ -48,6 +48,7 @@ The problem this project solves is the need for a system to manage gateways and 
 
 - The version of Node.js used for this project is v14.21.0.
 - Used windows 11 for development
+- Deployed with railway
 
 ### Installing Dependencies
 
