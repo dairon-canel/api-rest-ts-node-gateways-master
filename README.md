@@ -4,20 +4,18 @@ This project is a sample API REST service built with Node.js that manages gatewa
 
 ## Table of contents
 
-- [API REST Service with Node for Managing Gateways and Peripheral Devices](#api-rest-service-with-node-for-managing-gateways-and-peripheral-devices)
-  - [Table of contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The challenge](#the-challenge)
-    - [Screenshots](#screenshots)
-      - [Frontend](#frontend)
-      - [Swagger Docs](#swagger-docs)
-    - [Links](#links)
-  - [Development environment](#development-environment)
-    - [Requeriments used](#requeriments-used)
-    - [Installing Dependencies](#installing-dependencies)
-  - [Author](#author)
-  - [Contributing](#contributing)
-  - [License](#license)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+   - [Frontend](#frontend)
+   - [Swagger Docs](#swagger-docs)
+  - [Links](#links)
+- [Development environment](#development-environment)
+  - [Requeriments used](#requeriments-used)
+  - [Installing Dependencies](#installing-dependencies)
+- [Author](#author)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
 
@@ -29,11 +27,13 @@ The problem this project solves is the need for a system to manage gateways and 
 
 #### Frontend
 
-![](./screenshot.jpg)
+![image](https://user-images.githubusercontent.com/98697567/228039272-babea19f-90e6-46a0-a052-e3c2a6ab6139.png)
+![image](https://user-images.githubusercontent.com/98697567/228039470-84a79f14-3f44-4d49-9f28-06981ca298d3.png)
+
 
 #### Swagger Docs
 
-![](./screenshot.jpg)
+![image](https://user-images.githubusercontent.com/98697567/228039599-84d950b3-c5c8-4749-8a5d-1f92367439c1.png)
 
 ### Links
 
