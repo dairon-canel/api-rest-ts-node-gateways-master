@@ -220,6 +220,8 @@ function routes(app: Express) {
    *          application/json:
    *            schema:
    *              $ref: '#/components/schemas/PeripheralSchema'
+   *      401:
+   *        description: No more than 10 peripheral devices are allowed for a gateway.
    *      409:
    *        description: Conflict
    *      400:

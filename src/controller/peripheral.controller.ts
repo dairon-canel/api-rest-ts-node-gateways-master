@@ -25,7 +25,7 @@ export async function createPeripheralHandler(
     const { length } = await queryPeripheral({ gateway_id: body.gateway_id });
 
     if (length >= 10) {
-      return res.status(400).send({
+      return res.status(401).send({
         error: 'No more than 10 peripheral devices are allowed for a gateway.',
       });
     }

@@ -74,7 +74,7 @@ const params = {
  *        vendor:
  *          type: string
  *        status:
- *          type: number
+ *          type: string
  *        _id:
  *          type: string
  *        uid:
