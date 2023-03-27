@@ -48,7 +48,7 @@ export async function createPeripheralHandler(
   } catch (error) {
     logger.error('Error creating peripheral:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error creating peripheral',
       message: (error as { message: string }).message,
     });
@@ -76,7 +76,7 @@ export async function updatePeripheralHandler(
   } catch (error) {
     logger.error('Error updating peripheral:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error updating peripheral',
       message: (error as { message: string }).message,
     });
@@ -98,7 +98,7 @@ export async function getPeripheralHandler(
   } catch (error) {
     logger.error('Error retrieving peripheral:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error retrieving peripheral',
       message: (error as { message: string }).message,
     });
@@ -118,7 +118,7 @@ export async function getAllPeripheralHandler(
   } catch (error) {
     logger.error('Error retrieving peripherals:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error retrieving peripherals',
       message: (error as { message: string }).message,
     });
@@ -140,7 +140,7 @@ export async function getAllPeripheralByGatewayHandler(
   } catch (error) {
     logger.error('Error retrieving peripherals:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error retrieving peripherals',
       message: (error as { message: string }).message,
     });
@@ -178,7 +178,7 @@ export async function deletePeripheralHandler(
   } catch (error) {
     logger.error('Error deleting peripheral:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error deleting peripheral',
       message: (error as { message: string }).message,
     });

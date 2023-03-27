@@ -30,7 +30,7 @@ export async function createGatewayHandler(
   } catch (error) {
     logger.error('Error creating gateway:');
     logger.error((error as { message: string }).message);
-    return res.status(500).send((error as { message: string }).message);
+    return res.status(409).send((error as { message: string }).message);
   }
 }
 
@@ -62,7 +62,7 @@ export async function updateGatewayHandler(
   } catch (error) {
     logger.error('Error updating gateway:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error updating gateway',
       message: (error as { message: string }).message,
     });
@@ -84,7 +84,7 @@ export async function getGatewayHandler(
   } catch (error) {
     logger.error('Error retrieving gateway:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error retrieving gateway',
       message: (error as { message: string }).message,
     });
@@ -101,7 +101,7 @@ export async function getAllGatewayHandler(req: Request, res: Response) {
   } catch (error) {
     logger.error('Error retrieving gateways:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error retrieving gateways',
       message: (error as { message: string }).message,
     });
@@ -129,7 +129,7 @@ export async function deleteGatewayHandler(
   } catch (error) {
     logger.error('Error deleting gateway:');
     logger.error((error as { message: string }).message);
-    return res.status(500).json({
+    return res.status(409).json({
       error: 'Error deleting gateway',
       message: (error as { message: string }).message,
     });

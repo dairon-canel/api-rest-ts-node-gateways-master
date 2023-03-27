@@ -34,6 +34,56 @@ const params = {
   }),
 };
 
+/**
+ * @openapi
+ * components:
+ *  schemas:
+ *    CreatePeripheralInput:
+ *      type: object
+ *      required:
+ *        - gateway_id
+ *        - vendor
+ *        - status
+ *      properties:
+ *        gateway_id:
+ *          type: string
+ *          default: GW_nxw04m
+ *        vendor:
+ *          type: string
+ *          default: Vendor 1
+ *        status:
+ *          type: string
+ *          default: OFFLINE
+ *    UpdatePeripheralInput:
+ *      type: object
+ *      optional:
+ *        - vendor
+ *        - status
+ *      properties:
+ *        vendor:
+ *          type: string
+ *          default: Vendor 1
+ *        status:
+ *          type: string
+ *          default: OFFLINE
+ *    PeripheralSchema:
+ *      type: object
+ *      properties:
+ *        gateway_id:
+ *          type: string
+ *        vendor:
+ *          type: string
+ *        status:
+ *          type: number
+ *        _id:
+ *          type: string
+ *        uid:
+ *          type: string
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ */
 export const createPeripheralSchema = object({
   ...payload,
 });

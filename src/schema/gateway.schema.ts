@@ -30,6 +30,52 @@ const params = {
   }),
 };
 
+/**
+ * @openapi
+ * components:
+ *  schemas:
+ *    CreateGatewayInput:
+ *      type: object
+ *      required:
+ *        - name
+ *        - ipv4Address
+ *      properties:
+ *        name:
+ *          type: string
+ *          default: GW001
+ *        ipv4Address:
+ *          type: string
+ *          default: 197.168.0.1
+ *    UpdateGatewayInput:
+ *      type: object
+ *      required:
+ *        - name
+ *      optional:
+ *        - ipv4Address
+ *      properties:
+ *        name:
+ *          type: string
+ *          default: GW001
+ *        ipv4Address:
+ *          type: string
+ *          default: 197.168.0.1
+ *    GatewaySchema:
+ *      type: object
+ *      properties:
+ *        name:
+ *          type: string
+ *        ipv4Address:
+ *          type: string
+ *        peripheralCount:
+ *          type: number
+ *        serialNumber:
+ *          type: string
+ *        createdAt:
+ *          type: string
+ *        updatedAt:
+ *          type: string
+ */
+
 export const createGatewaySchema = object({
   ...payload,
 });
